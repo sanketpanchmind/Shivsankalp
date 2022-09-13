@@ -1,6 +1,6 @@
 .navbar .navbar-brand {
   background-image: url('../../../../assets/images/STPL_Logo_White.svg');
-  width: 200px;
+    width: 200px;
     height: 62px;
     background-repeat: no-repeat;
     padding: 0;
@@ -85,11 +85,12 @@
   margin: 1px;
 }
 .navbar-nav .nav-link{
-  padding:12px 25px;
+  padding:12px 15px;
   border-radius: 5px;
   font-size: 0.95rem;
   color: white;
 }
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover{
   background-color: var(--main-color);
   color: #fff !important;

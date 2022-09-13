@@ -16,8 +16,8 @@ const routes: Routes = [
     component: PartialLayoutComponent,
     loadChildren: () => import('./partial/partial-layout/partial-layout.module').then(m => m.PartialLayoutModule)
   },
-  { path: 'defence-erp', loadChildren: () => import('./web/industries/defence/defence-erp/defence-erp.module').then(m => m.DefenceErpModule) },
-  { path: 'vehicle-erp', loadChildren: () => import('./web/industries/vehicle-tracking/vehicle-erp/vehicle-erp.module').then(m => m.VehicleErpModule) },
+  // { path: 'defence-erp', loadChildren: () => import('./web/industries/defence/defence-erp/defence-erp.module').then(m => m.DefenceErpModule) },
+  // { path: 'vehicle-erp', loadChildren: () => import('./web/industries/vehicle-tracking/vehicle-erp/vehicle-erp.module').then(m => m.VehicleErpModule) },
   
  
   
