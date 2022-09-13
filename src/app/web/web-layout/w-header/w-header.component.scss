@@ -1,0 +1,112 @@
+.navbar .navbar-brand {
+  background-image: url('../../../../assets/images/STPL_Logo_White.svg');
+  width: 200px;
+    height: 62px;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-size: contain;
+}
+
+.navbar {
+  padding-block: 10px;
+}
+
+.navbar-scroll {
+  background-color: #fff;
+  padding-block: 5px;
+  transition-duration: 0.6s;
+}
+.navbar-scroll .navbar-nav .nav-link{
+  color: #000;
+}
+.navbar-scroll .navbar-brand {
+  background-image: url('../../../../assets/images/STPL_Logo.svg');
+  width: 170px;
+  height: 55px;
+  background-repeat: no-repeat;
+  padding: 0;
+  background-size: contain;
+}
+.form-select {
+  font-size: 0.85rem;
+  padding-block: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.form-select * {
+  color: var(--main-color);
+}
+
+.requestdemo {
+  position: fixed;
+  transform: rotate(270deg) translateY(-50%);
+  right: -72px;
+  z-index: 1000;
+  top: 25%;
+  border: none;
+  background: var(--main-color);
+  padding: 10px 20px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.downloadpdf {
+  position: fixed;
+  transform: rotate(270deg) translateY(-50%);
+  right: -82px;
+  z-index: 1000;
+  // top: 355px;
+  top: 450px;
+  border: none;
+  // background: var(--main-color);
+  background: var(--bs-blue);
+  padding: 10px 20px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.input-group .btn,
+.form-control{
+    box-shadow: none;
+    padding:10px 15px;
+    border-radius: 0;
+    font-size: 0.85rem;
+}
+.beta_logo {
+  width: 30px !important;
+  /* height: 30px; */
+  margin: 1px;
+}
+.navbar-nav .nav-link{
+  padding:12px 25px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  color: white;
+}
+.navbar-nav .nav-link:hover{
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+.navbar-nav .dropdown-menu{
+  font-size: 0.85rem;
+  padding: 0px;
+  border-radius: 0;
+  border: none;
+}
+.navbar-nav .dropdown-item{
+  padding: 10px 20px;
+}
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}

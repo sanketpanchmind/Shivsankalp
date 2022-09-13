@@ -1,0 +1,361 @@
+@import '~ngx-toastr/toastr';
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+/* @import '~lightgallery/scss/lightgallery'; */
+@import '~lightgallery/css/lightgallery';
+/* @import '~lightgallery.js/dist/css/lightgallery.min.css'; */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+}
+:root {
+    --main-color: rgb(0, 48, 130);
+    --main-light-color:rgb(178, 204, 248);
+    --blue-color: rgb(26, 117, 206);
+    --blue-light-color: rgba(26, 117, 206,0.25);
+    --color-primary: #18181A;
+  --color-secondary: #75757C;
+  --color-dark: #364C62;
+  --color-light: #F5F5F5;
+  --td: 150ms;
+  --te: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.text-main {
+    color: var(--main-color) !important;
+}
+.bg-main,
+.btn-main,
+.btn-main:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.btn-outline-main{
+    border: solid 1px var(--main-color);
+    color: var(--main-color);
+    background-color:transparent;
+}
+.bg-main-light{
+    background-color: var(--main-light-color);
+}
+.text-blue{
+    color: var(--blue-color) !important;
+}
+.bg-blue,
+.btn-blue,
+.btn-blue:hover {
+    background-color: var(--blue-color);
+    color: #fff;
+}
+.btn-outline-blue{
+    border: solid 1px var(--blue-color);
+    color: var(--blue-color);
+    background-color:transparent;
+}
+.btn-outline-blue:hover{
+    border: solid 1px var(--blue-color);
+    color: #fff;
+    background-color:var(--blue-color);
+}
+.bg-blue-light{
+    background-color: var(--blue-light-color);
+}
+
+.page-heading .card{
+    border-radius: 0%;
+    border: none;    
+}
+.page-heading .card-img-overlay {
+    background: linear-gradient(45deg, #000000f2, rgb(0 0 0 / 52%));
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.page-heading img{
+    height: 100vmin;
+    object-fit: cover;
+}
+.page-heading h3{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 7vmin;
+    margin-bottom: 1rem;
+    border-left: solid 8px var(--blue-color);
+    padding-left: 1rem;
+    font-weight: 900;
+}
+.page-heading .breadcrumb{
+    margin:0;
+    font-size: 1rem;
+}
+.page-heading .breadcrumb a{
+    color: var(--blue-color);
+    text-decoration: none;
+}
+.page-heading .breadcrumb .active{
+    color: #fff;
+}
+#main-content{
+    padding-block: 2rem;
+}
+#main-content .list,
+#main-content ul,
+#main-content ol,
+#main-content p{
+    /* font-size: 0.9rem; */
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 2rem;
+    text-align: justify;
+}
+ngx-file-drag-drop{
+    margin-inline:0 !important ;
+    max-width: 100% !important;
+    width: 100%;
+    height: 250px;
+}
+ngx-file-drag-drop.empty-input{
+    border-radius: 0;
+}
+ngx-file-drag-drop .placeholder
+{
+    background-color:unset !important;
+}
+.form-switch {
+    font-size: 1rem;
+    box-shadow: none;
+}
+.form-container .form-data,
+.form-container .form-select,
+.form-container .form-check-label,
+.form-container .form-control,
+.form-container .btn{
+    font-size: 0.8rem;
+    box-shadow: none !important;
+}
+.form-container .form-label{
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 0px;
+}
+.form-container .ngx-select__item{
+    font-size: 0.8rem;
+}
+.form-container .ngx-select__item_active{
+    background-color:var(--main-color) !important;
+}
+.form-container .input-group-text{
+    font-size: 0.8rem;
+}
+.form-container .form-height{
+    max-height: 100px;
+    overflow-y: auto;
+}
+.plain-card{
+    box-shadow: 0 2px 6px -1px rgb(0 0 0 / 10%);
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s ease-in-out;
+    border: none;
+}
+.plain-card .card-header{
+    font-weight: bold;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 0.85rem;
+}
+.plain-card .card-header .btn{
+    box-shadow: none !important;
+    font-size: 0.8rem;
+}
+.dashboard-table{
+    width: 100%;
+    font-size: 0.8rem;
+    border-collapse: unset;
+    border-spacing: 0;
+}
+.dashboard-table thead th{
+    background-color:#eee;
+}
+.dashboard-table thead th,
+.dashboard-table tbody td{
+    vertical-align: middle !important;
+}
+.dashboard-table tbody td .btn{
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    box-shadow: none;
+}
+.modal .btn-close{
+    filter: invert(1);
+    box-shadow: none !important;
+}
+.cdk-overlay-container{
+    z-index: 9999 !important;
+}
+
+ngx-select.ng-untouched.ng-invalid.is-invalid .ngx-select__toggle {
+    border: solid 1px red !important;
+}
+
+
+.ngx-pagination {
+    padding: 0 !important;
+    margin-top: 10px;
+    display:flex;
+    justify-content: end;
+    margin-bottom:0 !important;
+}
+
+.ngx-pagination .current {
+    padding: 6px 12px !important; 
+    background: var(--main-color)!important;
+    border: solid 1px var(--main-color) !important;
+    font-size: .7rem; 
+}
+
+.ngx-pagination .disabled,
+.ngx-pagination a,
+.ngx-pagination button {
+    padding: 6px 12px !important; 
+    text-decoration: none;
+    font-size: .7rem; 
+    
+}
+
+.ngx-pagination li {
+    display: inline-block;
+    border: solid 1px #bbb !important;
+    margin: 0 !important;
+    font-size: 0.85rem;
+}
+
+.ngx-pagination .pagination-next a::after,
+.ngx-pagination .pagination-next.disabled::after,
+.ngx-pagination .pagination-previous a::before,
+.ngx-pagination .pagination-previous.disabled::before {
+    margin: 0 !important;
+}
+
+.ngx-pagination .pagination-previous {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ngx-pagination .pagination-next {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+tr.active {
+    background: #f5f5f5;
+}
+.invalid-feedback{
+    font-size: 0.65rem;
+}
+.toast-container{
+    font-size: 0.85rem;
+}
+angular-editor{
+    font-size: 0.8rem;
+}
+
+.text-ellipsis-250px {
+    white-space: nowrap;
+    width: 250px !important;
+    display: block;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.modal-body svg {
+    width: 50px !important;
+    display: block !important;
+    margin: 0px auto !important;
+}
+.uploaded-images{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.uploaded-images img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+.uploaded-images .btn{
+    border-radius: 50%;
+    font-size: 0.75rem;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.btn-readmore:hover {
+    background-position: left bottom;
+    color: var(--main-color)
+}
+
+.btn-readmore2 {
+    color: var(--main-color);
+    border: solid 1px var(--main-color);
+    background-color: transparent;
+    background: linear-gradient(to left, transparent 50%, var(--main-color) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease;
+    padding: 15px 35px;
+    border-radius: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px
+}
+
+.btn-readmore2:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+/* .clients #container,
+#technology #container{
+    position:unset !important;
+    overflow-y:hidden !important; 
+} */
+/* #grid{
+    grid-template-columns: repeat(6,1fr) !important;
+} */
+
+
+/* card unset for slider property */
+.ng-image-slider .ng-image-slider-container .main .main-inner .img-div 
+{ 
+    box-shadow: unset !important;
+}
+/* symbol size */
+.technologies .ng-image-slider .ng-image-slider-container .main .main-inner
+ {
+    height: 100px !important;
+}
+.technologies .ng-image-slider {
+    display: flex !important;
+    position: relative !important;
+    width: 100% !important;
+    align-items: center !important;
+    height: 120px !important;
+    /* bottom: 50px; */
+    margin-bottom: 110px;
+}
+
+.clients .ng-image-slider .ng-image-slider-container .main .main-inner .img-div img{
+    /* padding: 20px !important; */
+    width: 220px !important;
+}
+.static-list{
+    columns:2;
+    -webkit-columns: 2;
+  -moz-columns: 2;
+}

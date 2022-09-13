@@ -1,0 +1,294 @@
+<nav class="navbar navbar-light navbar-expand-lg fixed-top" (scroll)="onWindowScroll()">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-end" href="home">
+      <!-- <img src="assets/images/STPL_Logo.svg" alt="STPL Logo">
+      <img src="assets/images/products/BETA_logo.png" alt="" class="beta_logo"> -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="IndustriesnavbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Industries
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="IndustriesnavbarDropdown">
+            <li><a class="dropdown-item" href="industries/mining">Mining</a></li>
+            <li><a class="dropdown-item" href="industries/defence">Defence</a></li>
+            <li><a class="dropdown-item" href="industries/dairy">Dairy</a></li>
+            <li><a class="dropdown-item" href="industries/election">Election</a></li>
+            <li><a class="dropdown-item" href="industries/vehicle-tracking">Vehicle Tracking System</a></li>
+            <li><a class="dropdown-item" href="industries/livestock">
+                <!-- Livestock -->
+                e-Anifarm
+              </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- <a class="nav-link" href="projects">Projects</a> -->
+          <a class="nav-link dropdown-toggle" routerLink="projects" id="ProjectsnavbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="ProjectsnavbarDropdown">
+            <li><a class="dropdown-item" href="solutions/mahakhanij-system">mahakhanij System</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="ProjectsnavbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Solutions
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="SolutionsnavbarDropdown">
+            <!-- <li><a class="dropdown-item" href="solutions/mahakhanij-system">mahakhanij System</a></li> -->
+            <li><a class="dropdown-item" href="solutions/election-management-system">Election Management System</a></li>
+            <li><a class="dropdown-item" href="solutions/kote-inventory-management-system">Kote Inventory Management
+                System</a></li>
+            <li><a class="dropdown-item" href="solutions/automatic-milk-collection-unit">Automatic Milk Collection
+                Unit</a></li>
+            <li><a class="dropdown-item" href="solutions/dairy-vet-software">Dairy e-Vet System</a></li>
+            <li><a class="dropdown-item" href="">
+                Dairy e-Anifarm
+              </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- <a class="nav-link" href="discover-us">Discover Us</a> -->
+          <a class="nav-link dropdown-toggle" href="discover-us" id="DiscovernavbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Discover Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="DiscovernavbarDropdown">
+            <li><a class="dropdown-item" href="/discoverus/about-us">About Us</a></li>
+            <li><a class="dropdown-item" href="">News & Blogs</a></li>
+            <li><a class="dropdown-item" href="/discoverus/gallery">Life at Shaurya</a></li>
+            <li><a class="dropdown-item" href="/discoverus/clients">Our Clients</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="career">Career</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- <div id="myNav" class="overlay" [ngStyle]="{'width': openoverlay}">
+  <button class="closebtn" (click)="closeNav()">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <div class="overlay-content">
+    <a href="home">Home</a>
+    <a href="industries" role="button" class="submenuBtn"> Industries </a>
+    <div class="collapse1">
+      <div class="submenu">
+        <div class="row">
+          <div class="col-sm">
+            <a href="industries/defence">Defence</a>
+          </div>
+          <div class="col-sm">
+            <a href="industries/dairy">Dairy</a>
+          </div>
+          <div class="col-sm">
+            <a href="industries/election">Election</a>
+          </div>
+          <div class="col-sm">
+            <a href="industries/vehicle-tracking">Vehicle Tracking</a>
+          </div>
+          <div class="col-sm">
+            <a href="industries/livestock">Livestock</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="projects">Projects</a>
+    <a href="solutions" role="button" class="submenuBtn">   Solutions   </a>
+    <div class="collapse1">
+      <div class="submenu">
+        <div class="row">
+          <div class="col-sm">
+            <a href="solutions/mahamining-system">mahakhanij System</a>
+          </div>
+          <div class="col-sm">
+            <a href="solutions/election-management-system">Election Management System</a>
+          </div>
+          <div class="col-sm">
+            <a href="solutions/kote-inventory-management-system">Kote Inventory System</a>
+          </div>
+          <div class="col-sm">
+            <a href="solutions/automatic-milk-collection-unit">Automatic Milk Collection Unit</a>
+          </div>
+          <div class="col-sm">
+            <a href="solutions/dairy-vet-software">Dairy Vet System</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="discover-us">Discover Us</a>
+    <a href="career">Career</a>
+    <a href="contact-us">Contact Us</a>
+  </div>
+</div> -->
+<button data-bs-toggle="modal" class="requestdemo" (click)="clearForm()" data-bs-target="#RequestDemoModal">Request a
+  Demo</button>
+<a href="../../../../assets/Download/STPL-Brochure.pdf" data-bs-toggle="" class="downloadpdf" data-bs-target=""
+  download>Download Brochure</a>
+
+<!-- Modal for request a demo -->
+<div class="modal fade" id="RequestDemoModal" tabindex="-1" aria-labelledby="RequestDemoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0">
+      <form [formGroup]="requestDemoForm" (submit)="requestSubmitForm(1)">
+        <div class="modal-header bg-main">
+          <p class="modal-title mb-0" id="RequestDemoModalLabel">Request a Demo</p>
+          <button type="button" class="btn-close" (click)="clearForm()" #requestDemoModel data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Full Name *" formControlName="fullName"
+              [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }">
+            <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.fullName.errors?.required">Full Name is
+                required.</div>
+              <div class="text-danger" *ngIf="f.fullName.errors?.pattern">Please enter
+                Valid Full Name.</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Email ID *" formControlName="emailId"
+              [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }">
+            <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.emailId.errors?.required">Email ID is
+                required.</div>
+              <div class="text-danger" *ngIf="f.emailId.errors?.pattern">Please enter
+                Valid Email ID.</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Company Name *" formControlName="companyName"
+              [ngClass]="{ 'is-invalid': submitted && f.companyName.errors }">
+            <div *ngIf="submitted && f.companyName.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.companyName.errors?.required">Company Name is
+                required.</div>
+              <div class="text-danger" *ngIf="f.companyName.errors?.pattern">Please enter
+                Valid Company Name.</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Phone Number *" maxlength="11" minlength="10"
+              (keypress)="this.commonService.onlyDigitsExcludeZeroAtStart($event)" formControlName="phoneNo"
+              [ngClass]="{ 'is-invalid': submitted && f.phoneNo.errors }">
+            <div *ngIf="submitted && f.phoneNo.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.phoneNo.errors?.required">Phone Number is
+                required.</div>
+              <div class="text-danger" *ngIf="f.phoneNo.errors?.pattern">Please enter
+                Valid Phone Number.</div>
+            </div>
+          </div>
+          <div class="mb-0">
+            <textarea class="form-control" rows="4" placeholder="Send your request here *"
+              formControlName="requestDetails" [ngClass]="{ 'is-invalid': submitted && f.requestDetails.errors }">
+        </textarea>
+            <div *ngIf="submitted && f.requestDetails.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.requestDetails.errors?.required">Request Field is
+                required.</div>
+              <div class="text-danger" *ngIf="f.requestDetails.errors?.pattern">Please enter
+                Valid Request Field.</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn bg-secondary bg-opacity-25 btn-sm rounded-0 px-3 py-2"
+            (click)="clearForm()">Clear</button>
+          <button type="submit" class="btn btn-main btn-sm rounded-0 px-3 py-2">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Auto Modal pop-up for lead generation-->
+<button data-bs-toggle="modal" class="requestdemo" #AutoPopupModal (click)="clearForm()"
+  data-bs-target="#AutoPopModal"></button>
+<div class="modal fade" id="AutoPopModal" tabindex="-1" aria-labelledby="AutoPopModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0">
+      <form [formGroup]="requestDemoForm" (submit)="requestSubmitForm(2)">
+        <div class="modal-header bg-main">
+          <p class="modal-title mb-0" id="AutoPopModalLabel">Connect With Us</p>
+          <button type="button" class="btn-close" (click)="clearForm()" #AutoPopupModal data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Full Name *" formControlName="fullName"
+              [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }">
+            <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.fullName.errors?.required">Full Name is
+                required.</div>
+              <div class="text-danger" *ngIf="f.fullName.errors?.pattern">Please enter
+                Valid Full Name.</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Email ID *" formControlName="emailId"
+              [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }">
+            <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.emailId.errors?.required">Email ID is
+                required.</div>
+              <div class="text-danger" *ngIf="f.emailId.errors?.pattern">Please enter
+                Valid Email ID.</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Company Name" formControlName="companyName">
+            <!-- <div *ngIf="submitted && f.companyName.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.companyName.errors?.required">Company Name is
+                required.</div>
+              <div class="text-danger" *ngIf="f.companyName.errors?.pattern">Please enter
+                Valid Company Name.</div>
+            </div> -->
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Phone Number *" maxlength="11" minlength="10"
+              (keypress)="this.commonService.onlyDigitsExcludeZeroAtStart($event)" formControlName="phoneNo"
+              [ngClass]="{ 'is-invalid': submitted && f.phoneNo.errors }">
+            <div *ngIf="submitted && f.phoneNo.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.phoneNo.errors?.required">Phone Number is
+                required.</div>
+              <div class="text-danger" *ngIf="f.phoneNo.errors?.pattern">Please enter
+                Valid Phone Number.</div>
+            </div>
+          </div>
+          <div class="mb-0">
+            <textarea class="form-control" rows="4" placeholder="What do you want to see?"
+              formControlName="requestDetails" [ngClass]="{ 'is-invalid': submitted && f.requestDetails.errors }">
+        </textarea>
+            <div *ngIf="submitted && f.requestDetails.errors" class="invalid-feedback">
+              <div class="text-danger" *ngIf="f.requestDetails.errors?.required">Field is
+                required.</div>
+              <div class="text-danger" *ngIf="f.requestDetails.errors?.pattern">Please enter
+                Valid Field.</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn bg-secondary bg-opacity-25 btn-sm rounded-0 px-3 py-2"
+            (click)="clearForm()">Clear</button>
+          <button type="submit" class="btn btn-main btn-sm rounded-0 px-3 py-2">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

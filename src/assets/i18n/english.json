@@ -1,0 +1,54 @@
+{
+  "Election": {
+    "Tagline": {
+      "Tagline1" : "Raise Your Voice,",
+      "Tagline2" : "It's The Right Choice."
+    },
+    "Title" : "About Rajneta",
+    "TitleDiscrip": "Rajneta (Election Management System) software solution is best for providing the election management software system, which is secure web-based application with the latest technology. It includes a mobile application for voters survey and monitoring activity of ground work done by party workers.We realize your time is significant, so we have made campaign software to do all the hard work. Our software for politicians have developed powerful voter management software to help campaigns process that mountain of data and turn it into something useful, allowing them to target their messages more effectively and to easily track who they have talked to and when , providing statistical analysis of reports simultaneously.",
+    "DiscriTitle" : "Benefits of Rajneta Software",
+    "Discription" : "Facility to do quick voter survey through android app hence convincing educated voters by presenting facts and figures in logical manner through social media and bulk SMS and thus establish personal relation with voter through follow-up-calls and convincing them effectively."
+  },
+  "Dairy": {
+    "Tagline": {
+      "Tagline1" : "The Perfect Solution",
+      "Tagline2" : "for your",
+      "Tagline3" : "Dairy Business."
+    },
+    "Title": "",
+    "TitleDiscrip": [
+      {"DiscpSingle" : "We can use this software in Marathi and English language."},
+      {"DiscpSingle" : "List of accounts, advance, cattle feed, deductions and bonus are directly connected to accounting."},
+      {"DiscpSingle" : "List the Quantity of protein milk."},
+      {"DiscpSingle" : "If S.N.F. counting machine is not available then you can calculate S.N.F.by using C.L.R."},
+      {"DiscpSingle" : "Bluetooth device integration with software to calculate FAT and S.N.F."},
+      {"DiscpSingle" : "Rate cards can be prepared according to FAT and S.N.F."},
+      {"DiscpSingle" : "Dock receiving of raw milk can be verified."},
+      {"DiscpSingle" : "Different Rate cards can be used for billing purposes."},
+      {"DiscpSingle" : "Number of reports like profit and loss can be generated."},
+      {"DiscpSingle" : "Multiple dairy firms can be connected to main dairy through internet."},
+      {"DiscpSingle" : "Facility of data backup."},
+      {"DiscpSingle" : "User friendly software."}
+    ],
+    "DiscriTitle": "Dairy Procurement System",
+    "Discription": "A single ERP solution to manage production, quality control and business processes more effectively hence simplifying dairy businesses with the goal of increasing revenue. This ERP solution will be an end to numerous challenges of dairy industries and other regulatory requirements resulting to satisfy needs of dairy businesses effectively."
+  },
+  
+  "FeedbackFormPlaceholder": { 
+    "FeedbackTitle" : "Send Your Feedback",
+    "Name" : "Full Name",
+    "MobileNo" : "Enter Your Contact Number",
+    "emailId" : "Enter Your Email Id",
+    "Feedback" : "Enter Your Feedback..."
+  },
+  "ValidationMsg": {
+    "NameReq" : "Name is required.",
+    "NamePattern" : "Please enter Valid Name.",
+    "MobileNoReq" : "Contact No. is required.",
+    "MobileNoPattern" : "Please enter Valid Contact No.",
+    "emailIdReq" : "Email ID is required.",
+    "emailIdPattern" : "Please enter Valid Email ID.",
+    "FeedbackReq" : "Feedback is required",
+    "FeedbackPattern" : "Please enter Valid Feedback"
+  }
+}

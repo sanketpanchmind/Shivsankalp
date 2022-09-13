@@ -1,0 +1,97 @@
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #1C232F;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 15px;
+    background: #1C232F;
+    border-bottom: solid 1px #333;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+#sidebar .sidebar-header h5{
+    font-weight: 900;
+    color: var(--blue-color);
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #aaa;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0px 15px;
+    text-transform: uppercase;
+}
+
+#sidebar ul li a {
+    padding: 15px 15px;
+    font-size: 0.85rem;
+    display: block;
+    text-decoration: none;
+    color: #aaa;
+}
+#sidebar ul li a i{
+    width: 26px;
+}
+
+#sidebar ul li a:hover {
+    background: #161C25;
+    color: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #161C25;
+}
+
+.dropdown-toggle[aria-expanded="true"]:after {
+    transform: rotate(360deg);
+}
+
+/*for animation*/
+.dropdown-toggle:after {
+    transition: 0.7s;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 8px;
+    transform: rotate(270deg);
+}
+
+ul ul a {
+    font-size: 0.8em !important;
+    padding-left: 45px !important;
+    background: #161C25;
+    color: #aaa;
+    padding-block:10px !important;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+}
